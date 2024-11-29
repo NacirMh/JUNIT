@@ -9,4 +9,8 @@ public class Shapes {
 		return num1 * 4 ;
 	}
 	
+	public double computeCirclePerimeter(int r) {
+		return 2*Math.PI*r;
+	}
+	
 }

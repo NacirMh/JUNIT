@@ -31,14 +31,21 @@ class ShapesTest {
     }
     
     @Test
-	void testcomputeSquarePerimter() {
+	void testComputeSquarePerimter() {
 	     assertEquals(16,shapes.computeSquarePerimeter(4));
 	}
     
     
 	@Test
-	void testcomputeSquareArea() {
+	void testComputeSquareArea() {
 	     assertEquals(9,shapes.computeSquareArea(3, 3));
 	}
+	
+	@Test
+	void testComputeCirclePerimeter() {
+		 double exceptedResult = 10 * Math.PI * 2;
+	     assertEquals(exceptedResult,shapes.computeCirclePerimeter(10));
+	}
+
 
 }
